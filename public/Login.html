@@ -15,14 +15,15 @@
             <h1>Login</h1>
             <form id="login-form">
                 <div class="text">
-                    <input type="text" placeholder="Email" id="email-input" required>
+                    <input type="text" placeholder="Email" id="email-input" >
                     <span></span>
                 </div>
                 <div class="text">
-                    <input type="password" placeholder="Password" id="password-input" required>
+                    <input type="password" placeholder="Password" id="password-input" >
                     <span></span>
                 </div>
                 <button type="submit" class="login">Submit</button>
+              <button type="button" class="loginAdmin" onclick="windowChange()"> Login as Anonymous ADMIN</button>
             </form>
         </div>
         <div class="box" id="box2">
@@ -53,6 +54,7 @@
         const emailInput = document.getElementById("email-input");
         const passwordInput = document.getElementById("password-input");
 
+            
         // Add a listener to the login form to handle form submissions
         loginForm.addEventListener("submit", (event) => {
             event.preventDefault(); // Prevent the form from submitting normally
@@ -77,6 +79,10 @@
                     alert(errorMessage);
                 });
         });
+
+         windowChange=function (){
+            window.location.href = "adminInfo.html"; 
+        }
     </script>
 </body>
 
