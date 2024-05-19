@@ -13,7 +13,7 @@
     grid-template-rows:1;
     grid-gap:10px;
     overflow: hidden;
-
+    margin-top: -50px;
 }
 .box{
     /* border: 1px solid black; */
@@ -108,11 +108,29 @@
     top:13%;
     margin: 8%;
     border-radius:10px;
+    margin-top: -15px;
 }
 .login:hover{
     cursor:pointer;
 }
 
+.loginAdmin{
+    font-size:21px;
+    font-style: bold;
+    background-color: #00334E;
+    color:#EAEAEA;
+    position: relative;
+    left:14%;
+    padding: 3%;
+    width: 181px;
+    top:13%;
+    margin: 8%;
+    border-radius:10px;
+    margin-top:-20px;
+}
+.loginAdmin:hover{
+    cursor:pointer;
+}
 
 /*IMAGE*/
 #box2{
@@ -154,9 +172,18 @@
     .login{
         margin:0 auto;
     } 
+    .loginAdmin{
+        margin:0 auto;
+    } 
+    
 }
 @media screen and (max-width:1144px) {
     .login{
+        margin:0 auto;
+        width:114px;
+        left:23%;
+    } 
+    .loginAdmin{
         margin:0 auto;
         width:114px;
         left:23%;
